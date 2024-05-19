@@ -1,6 +1,6 @@
 variable "tags" {
   default = {
-    service = "user"
+    service = "web"
   }
 }
 variable "environment" {
