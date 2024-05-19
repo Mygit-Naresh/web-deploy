@@ -82,7 +82,7 @@ pipeline {
       
         sh """
           cd terraform
-          terraform apply -auto-approve -var-file=${params.environment}/${params.environment}.tfvars -var="app_version=${params.version}" 
+          terraform apply -auto-approve -var-file=${params.environment}/${params.environment}.tfvars
           """
        }
 
